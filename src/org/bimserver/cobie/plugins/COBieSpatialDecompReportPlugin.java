@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.bimserver.models.store.ObjectDefinition;
 import org.bimserver.plugins.Plugin;
 import org.bimserver.plugins.PluginException;
 import org.bimserver.plugins.PluginManager;
@@ -43,7 +44,7 @@ private HashMap<String,File> configFiles;
 		configFilePaths.add(SPACE_REPORT_XSLT_PATH);
 		configFilePaths.add(SPACE_REPORT_CSS_PATH);
 		pluginManager.requireSchemaDefinition();
-		this.configFiles = ConfigUtil.prepareSerializerConfigFiles(pluginManager, getDefaultSerializerName(), this, configFilePaths);
+		this.configFiles = ConfigUtil.prepareSerializerConfigFiles(pluginManager, getDefaultName(), this, configFilePaths);
 		initialized = true;
 	}
 
@@ -63,7 +64,7 @@ private HashMap<String,File> configFiles;
 	}
 	
 	@Override
-	public String getDefaultSerializerName() {
+	public String getDefaultName() {
 		//return "COBIE";
 		return "COBieSpatialDecompositionReport";
 	}
@@ -85,5 +86,25 @@ private HashMap<String,File> configFiles;
 	@Override
 	public boolean isInitialized() {
 		return initialized;
+	}
+
+
+	/* (non-Javadoc)
+	 * @see org.bimserver.plugins.Plugin#getSettingsDefinition()
+	 */
+	@Override
+	public ObjectDefinition getSettingsDefinition() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	/* (non-Javadoc)
+	 * @see org.bimserver.plugins.serializers.SerializerPlugin#needsGeometry()
+	 */
+	@Override
+	public boolean needsGeometry() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }

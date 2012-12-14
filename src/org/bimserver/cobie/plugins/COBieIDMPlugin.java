@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 
 import org.bimserver.models.ifc2x3tc1.Ifc2x3tc1Package;
+import org.bimserver.models.store.ObjectDefinition;
 import org.bimserver.plugins.PluginException;
 import org.bimserver.plugins.PluginManager;
 import org.bimserver.plugins.objectidms.ObjectIDM;
@@ -26,7 +27,7 @@ public class COBieIDMPlugin implements ObjectIDMPlugin
 		ArrayList<ObjectIDMPlugin> idmplugins = (ArrayList<ObjectIDMPlugin>) pluginManager.getAllObjectIDMPlugins(true);
 		for(ObjectIDMPlugin plugin: idmplugins)
 		{
-			if (plugin.getDefaultObjectIDMName()==FILE_BASED_OBJECT_IDM_PLUGIN_NAME)
+			if (plugin.getDefaultName()==FILE_BASED_OBJECT_IDM_PLUGIN_NAME)
 				fbPlugin = plugin;
 		}
 		cobieObjectIDM = new COBieIDM(ignoreFile,CollectionUtils.singleSet(Ifc2x3tc1Package.eINSTANCE), pluginManager.getPluginContext(this),fbPlugin);
@@ -63,10 +64,19 @@ public class COBieIDMPlugin implements ObjectIDMPlugin
 	}
 
 	@Override
-	public String getDefaultObjectIDMName()
+	public String getDefaultName()
 	{
 		// TODO Auto-generated method stub
 		return "COBieIDMPlugin";
+	}
+
+	/* (non-Javadoc)
+	 * @see org.bimserver.plugins.Plugin#getSettingsDefinition()
+	 */
+	@Override
+	public ObjectDefinition getSettingsDefinition() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

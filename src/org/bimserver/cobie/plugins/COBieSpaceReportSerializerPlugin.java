@@ -1,5 +1,6 @@
 package org.bimserver.cobie.plugins;
 
+import org.bimserver.models.store.ObjectDefinition;
 import org.bimserver.plugins.PluginException;
 import org.bimserver.plugins.PluginManager;
 import org.bimserver.plugins.serializers.EmfSerializer;
@@ -30,7 +31,7 @@ public class COBieSpaceReportSerializerPlugin implements SerializerPlugin{
 	}
 	
 	@Override
-	public String getDefaultSerializerName() {
+	public String getDefaultName() {
 		//return "COBIE";
 		return "COBieSpaceReport(html)";
 	}
@@ -53,6 +54,24 @@ public class COBieSpaceReportSerializerPlugin implements SerializerPlugin{
 	@Override
 	public boolean isInitialized() {
 		return initialized;
+	}
+
+	/* (non-Javadoc)
+	 * @see org.bimserver.plugins.Plugin#getSettingsDefinition()
+	 */
+	@Override
+	public ObjectDefinition getSettingsDefinition() {
+		// TODO cobie changes
+		return null;
+	}
+
+	/* (non-Javadoc)
+	 * @see org.bimserver.plugins.serializers.SerializerPlugin#needsGeometry()
+	 */
+	@Override
+	public boolean needsGeometry() {
+		// TODO  cobie changes
+		return false;
 	}
 
 }

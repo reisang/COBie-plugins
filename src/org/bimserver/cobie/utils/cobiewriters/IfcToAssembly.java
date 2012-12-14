@@ -24,6 +24,7 @@ import org.bimserver.cobie.cobielite.COBIEType;
 import org.bimserver.cobie.utils.COBieQuery;
 import org.bimserver.cobie.utils.COBieUtility;
 import org.bimserver.cobie.utils.COBieUtility.CobieSheetName;
+import org.bimserver.emf.IfcModelInterface;
 import org.bimserver.models.ifc2x3tc1.IfcBuilding;
 import org.bimserver.models.ifc2x3tc1.IfcBuildingStorey;
 import org.bimserver.models.ifc2x3tc1.IfcMaterial;
@@ -37,7 +38,6 @@ import org.bimserver.models.ifc2x3tc1.IfcRelNests;
 import org.bimserver.models.ifc2x3tc1.IfcRelationship;
 import org.bimserver.models.ifc2x3tc1.IfcSite;
 import org.bimserver.models.ifc2x3tc1.IfcSpace;
-import org.bimserver.plugins.serializers.IfcModelInterface;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

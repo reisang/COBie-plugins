@@ -21,9 +21,9 @@ import org.bimserver.cobie.cobielite.COBIEType;
 import org.bimserver.cobie.cobielite.ResourceType;
 import org.bimserver.cobie.utils.COBieUtility;
 import org.bimserver.cobie.utils.COBieUtility.CobieSheetName;
+import org.bimserver.emf.IfcModelInterface;
 import org.bimserver.models.ifc2x3tc1.IfcConstructionEquipmentResource;
 import org.bimserver.models.ifc2x3tc1.IfcOwnerHistory;
-import org.bimserver.plugins.serializers.IfcModelInterface;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

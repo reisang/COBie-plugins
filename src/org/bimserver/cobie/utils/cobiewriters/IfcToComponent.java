@@ -26,6 +26,7 @@ import org.bimserver.cobie.cobielite.ComponentType;
 import org.bimserver.cobie.utils.COBieUtility;
 import org.bimserver.cobie.utils.COBieUtility.CobieSheetName;
 import org.bimserver.cobie.utils.stringwriters.IfcRelationshipsToCOBie;
+import org.bimserver.emf.IfcModelInterface;
 import org.bimserver.models.ifc2x3tc1.IfcBuilding;
 import org.bimserver.models.ifc2x3tc1.IfcBuildingStorey;
 import org.bimserver.models.ifc2x3tc1.IfcDoor;
@@ -45,7 +46,6 @@ import org.bimserver.models.ifc2x3tc1.IfcSpace;
 import org.bimserver.models.ifc2x3tc1.IfcSpatialStructureElement;
 import org.bimserver.models.ifc2x3tc1.IfcWindow;
 import org.bimserver.models.ifc2x3tc1.IfcZone;
-import org.bimserver.plugins.serializers.IfcModelInterface;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

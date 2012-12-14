@@ -22,6 +22,7 @@ import org.bimserver.cobie.cobielite.FacilityType;
 import org.bimserver.cobie.plugins.COBieIfcModel;
 import org.bimserver.cobie.utils.COBieUtility;
 import org.bimserver.cobie.utils.stringwriters.DeserializerStaticStrings;
+import org.bimserver.emf.OidProvider;
 import org.bimserver.models.ifc2x3tc1.Ifc2x3tc1Factory;
 import org.bimserver.models.ifc2x3tc1.IfcBuilding;
 import org.bimserver.models.ifc2x3tc1.IfcClassification;
@@ -39,7 +40,6 @@ import org.bimserver.models.ifc2x3tc1.IfcSite;
 import org.bimserver.models.ifc2x3tc1.IfcUnit;
 import org.bimserver.models.ifc2x3tc1.IfcUnitAssignment;
 import org.bimserver.models.ifc2x3tc1.IfcUnitEnum;
-import org.bimserver.plugins.serializers.OidProvider;
 
 
 public class FacilityDeserializer 

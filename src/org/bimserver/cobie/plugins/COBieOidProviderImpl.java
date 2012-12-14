@@ -15,8 +15,9 @@ package org.bimserver.cobie.plugins;
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *****************************************************************************/
-import org.bimserver.plugins.serializers.IfcModelInterface;
-import org.bimserver.plugins.serializers.OidProvider;
+import org.bimserver.emf.IfcModelInterface;
+import org.bimserver.emf.OidProvider;
+import org.eclipse.emf.ecore.EClass;
 
 public class COBieOidProviderImpl implements OidProvider
 {
@@ -29,9 +30,9 @@ public class COBieOidProviderImpl implements OidProvider
 	}
 	
 	@Override
-	public long newOid() 
+	public long newOid(EClass eclass) 
 	{
-		// TODO Auto-generated method stub
+		// TODO cobie changes
 		return model.size()+1;
 	}
 

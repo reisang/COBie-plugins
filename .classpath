@@ -5,8 +5,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/jdom.jar"/>
 	<classpathentry kind="lib" path="lib/xbean.jar"/>
-	<classpathentry kind="lib" path="lib/xelem_src.3.0.jar"/>
-	<classpathentry kind="lib" path="lib/xelem.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/Ifc"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/Utils"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/BimServerClientLib"/>
@@ -18,5 +16,6 @@
 	<classpathentry exported="true" kind="lib" path="lib/xalan-2.6.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/xerces_2_5_0.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/FileBasedObjectIDM"/>
+	<classpathentry kind="lib" path="lib/xelem.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

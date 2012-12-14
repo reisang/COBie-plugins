@@ -29,6 +29,8 @@ import org.bimserver.cobie.utils.deserializer.SystemDeserializer;
 import org.bimserver.cobie.utils.deserializer.ZoneDeserializer;
 import org.bimserver.cobie.utils.stringwriters.DeserializerStaticStrings;
 import org.bimserver.emf.IdEObject;
+import org.bimserver.emf.IfcModelInterfaceException;
+import org.bimserver.emf.OidProvider;
 import org.bimserver.ifc.IfcModel;
 import org.bimserver.models.ifc2x3tc1.Ifc2x3tc1Factory;
 import org.bimserver.models.ifc2x3tc1.IfcBuilding;
@@ -45,7 +47,6 @@ import org.bimserver.models.ifc2x3tc1.IfcSpace;
 import org.bimserver.models.ifc2x3tc1.IfcSystem;
 import org.bimserver.models.ifc2x3tc1.IfcTypeObject;
 import org.bimserver.models.ifc2x3tc1.IfcZone;
-import org.bimserver.plugins.serializers.OidProvider;
 
 import com.google.common.collect.BiMap;
 
@@ -112,16 +113,26 @@ public class COBieIfcModel extends IfcModel {
 	
 	public long add(IdEObject eObject, OidProvider oidProvider) 
 	{
-		long oid = oidProvider.newOid();
-		this.add(oid, eObject);
+		long oid = oidProvider.newOid(eObject.eClass());
+		try {
+			this.add(oid, eObject);
+		} catch (IfcModelInterfaceException ex) {
+			// TODO Cobie change
+			ex.printStackTrace();
+		}
 		objectAdded(eObject,oid);
 		return oid;
 	}
 	
 	public long addComponent(IfcProduct product, ComponentType component, IfcCommonHandler ifcCommonHandler)
 	{
-		long oid = ifcCommonHandler.getOidProvider().newOid();
-		this.add(oid, product);
+		long oid = ifcCommonHandler.getOidProvider().newOid(product.eClass());
+		try {
+			this.add(oid, product);
+		} catch (IfcModelInterfaceException ex) {
+			// TODO Cobie change
+			ex.printStackTrace();
+		}
 		componentAdded(product,oid,component,ifcCommonHandler);
 		return oid;
 	}

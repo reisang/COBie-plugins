@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import org.bimserver.models.store.ObjectDefinition;
 import org.bimserver.plugins.PluginException;
 import org.bimserver.plugins.PluginManager;
 import org.bimserver.plugins.serializers.EmfSerializer;
@@ -25,7 +26,7 @@ public class COBieZoneReportPlugin implements SerializerPlugin
 		configFilePaths.add(ZONE_REPORT_XSLT_PATH);
 		configFilePaths.add(ZONE_REPORT_CSS_PATH);
 		pluginManager.requireSchemaDefinition();
-		this.configFiles = ConfigUtil.prepareSerializerConfigFiles(pluginManager, getDefaultSerializerName(), this, configFilePaths);
+		this.configFiles = ConfigUtil.prepareSerializerConfigFiles(pluginManager, getDefaultName(), this, configFilePaths);
 		initialized = true;
 
 	}
@@ -56,7 +57,7 @@ public class COBieZoneReportPlugin implements SerializerPlugin
 	}
 
 	@Override
-	public String getDefaultSerializerName()
+	public String getDefaultName()
 	{
 		return "COBieZoneReport";
 	}
@@ -71,6 +72,25 @@ public class COBieZoneReportPlugin implements SerializerPlugin
 	public String getDefaultContentType()
 	{
 		return "appliction/html";
+	}
+
+	
+	/* (non-Javadoc)
+	 * @see org.bimserver.plugins.Plugin#getSettingsDefinition()
+	 */
+	@Override
+	public ObjectDefinition getSettingsDefinition() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/* (non-Javadoc)
+	 * @see org.bimserver.plugins.serializers.SerializerPlugin#needsGeometry()
+	 */
+	@Override
+	public boolean needsGeometry() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }

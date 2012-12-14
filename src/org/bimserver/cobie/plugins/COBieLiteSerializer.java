@@ -41,13 +41,13 @@ import org.bimserver.cobie.utils.cobiewriters.IfcToSpare;
 import org.bimserver.cobie.utils.cobiewriters.IfcToSystem;
 import org.bimserver.cobie.utils.cobiewriters.IfcToType;
 import org.bimserver.cobie.utils.cobiewriters.IfcToZone;
+import org.bimserver.emf.IfcModelInterface;
 import org.bimserver.models.ifc2x3tc1.IfcObjectDefinition;
 import org.bimserver.models.ifc2x3tc1.IfcRelAssociates;
 import org.bimserver.models.ifc2x3tc1.IfcRoot;
 import org.bimserver.plugins.PluginManager;
 import org.bimserver.plugins.ifcengine.IfcEngine;
 import org.bimserver.plugins.serializers.EmfSerializer;
-import org.bimserver.plugins.serializers.IfcModelInterface;
 import org.bimserver.plugins.serializers.ProjectInfo;
 import org.bimserver.plugins.serializers.SerializerException;
 import org.bimserver.utils.UTF8PrintWriter;
@@ -87,7 +87,7 @@ public class COBieLiteSerializer extends EmfSerializer{
 	}
 
 	@Override
-	protected void reset() {
+	public void reset() {
 		setMode(Mode.BODY);
 		this.out = null;
 	}
@@ -95,8 +95,8 @@ public class COBieLiteSerializer extends EmfSerializer{
 	//public File getConfigurationFile() {
 	//	return configurationFile;
 	//}
-	public void init(IfcModelInterface model, ProjectInfo projectInfo, PluginManager pluginManager, IfcEngine ifcEngine) throws SerializerException {
-		super.init(model, projectInfo, pluginManager, ifcEngine);
+	public void init(IfcModelInterface model, ProjectInfo projectInfo, PluginManager pluginManager, IfcEngine ifcEngine, boolean normalizeOids) throws SerializerException {
+		super.init(model, projectInfo, pluginManager, ifcEngine,normalizeOids);
 		projectName = projectInfo.getName();
 		init(model,projectInfo,pluginManager);
 	}

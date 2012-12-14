@@ -17,9 +17,10 @@ package org.bimserver.cobie.plugins;
  *****************************************************************************/
 import java.io.File;
 
-import org.bimserver.plugins.ObjectIDMException;
+import org.bimserver.models.store.ObjectDefinition;
 import org.bimserver.plugins.PluginException;
 import org.bimserver.plugins.PluginManager;
+import org.bimserver.plugins.objectidms.ObjectIDMException;
 import org.bimserver.plugins.serializers.EmfSerializer;
 import org.bimserver.plugins.serializers.SerializerPlugin;
 
@@ -60,7 +61,7 @@ public class COBieSerializerPlugin implements SerializerPlugin {
 	}
 	
 	@Override
-	public String getDefaultSerializerName() {
+	public String getDefaultName() {
 		//return "COBIE";
 		return "COBie";
 	}
@@ -83,5 +84,23 @@ public class COBieSerializerPlugin implements SerializerPlugin {
 	@Override
 	public boolean isInitialized() {
 		return initialized;
+	}
+
+	/* (non-Javadoc)
+	 * @see org.bimserver.plugins.Plugin#getSettingsDefinition()
+	 */
+	@Override
+	public ObjectDefinition getSettingsDefinition() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/* (non-Javadoc)
+	 * @see org.bimserver.plugins.serializers.SerializerPlugin#needsGeometry()
+	 */
+	@Override
+	public boolean needsGeometry() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }

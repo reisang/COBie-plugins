@@ -18,6 +18,7 @@ package org.bimserver.cobie.plugins;
  *****************************************************************************/
 import java.io.File;
 
+import org.bimserver.models.store.ObjectDefinition;
 import org.bimserver.plugins.PluginException;
 import org.bimserver.plugins.PluginManager;
 import org.bimserver.plugins.deserializers.DeserializerPlugin;
@@ -60,8 +61,20 @@ public class COBieDeserializerPlugin implements DeserializerPlugin {
 		return initialized;
 	}
 
+	/* (non-Javadoc)
+	 * @see org.bimserver.plugins.Plugin#getDefaultName()
+	 */
 	@Override
-	public String getDefaultDeserializerName() {
+	public String getDefaultName() {
 		return "COBieDeserializer";
+	}
+
+	/* (non-Javadoc)
+	 * @see org.bimserver.plugins.Plugin#getSettingsDefinition()
+	 */
+	@Override
+	public ObjectDefinition getSettingsDefinition() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

@@ -3,8 +3,8 @@ package org.bimserver.cobie.plugins;
 import java.io.OutputStream;
 import java.io.PrintWriter;
 
+import org.bimserver.emf.IfcModelInterface;
 import org.bimserver.plugins.PluginManager;
-import org.bimserver.plugins.serializers.IfcModelInterface;
 import org.bimserver.plugins.serializers.ProjectInfo;
 import org.bimserver.plugins.serializers.SerializerException;
 import org.slf4j.Logger;
@@ -21,7 +21,7 @@ public class COBieSpaceReportSerializer extends COBieLiteSerializer
 		super();
 	}
 	
-	protected void reset() 
+	public void reset() 
 	{
 		super.reset();
 	}

@@ -14,8 +14,8 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.stream.StreamSource;
 
 import org.bimserver.cobie.utils.XSLUtils;
+import org.bimserver.emf.IfcModelInterface;
 import org.bimserver.plugins.PluginManager;
-import org.bimserver.plugins.serializers.IfcModelInterface;
 import org.bimserver.plugins.serializers.ProjectInfo;
 import org.bimserver.plugins.serializers.SerializerException;
 import org.jdom.JDOMException;
@@ -80,7 +80,7 @@ public class COBieCheckSerializer extends COBieLiteSerializer
 		}
 	}
 	@Override
-	protected void reset() {
+	public void reset() {
 		super.reset();
 		
 	}

@@ -25,6 +25,7 @@ import org.bimserver.cobie.cobielite.FloorType;
 import org.bimserver.cobie.utils.COBieUtility;
 import org.bimserver.cobie.utils.COBieUtility.CobieSheetName;
 import org.bimserver.cobie.utils.stringwriters.IfcRelationshipsToCOBie;
+import org.bimserver.emf.IfcModelInterface;
 import org.bimserver.models.ifc2x3tc1.IfcBuilding;
 import org.bimserver.models.ifc2x3tc1.IfcBuildingStorey;
 import org.bimserver.models.ifc2x3tc1.IfcObjectDefinition;
@@ -32,7 +33,6 @@ import org.bimserver.models.ifc2x3tc1.IfcOwnerHistory;
 import org.bimserver.models.ifc2x3tc1.IfcRelDecomposes;
 import org.bimserver.models.ifc2x3tc1.IfcRelDefines;
 import org.bimserver.models.ifc2x3tc1.impl.IfcBuildingStoreyImpl;
-import org.bimserver.plugins.serializers.IfcModelInterface;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

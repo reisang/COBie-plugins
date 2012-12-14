@@ -732,9 +732,9 @@ public interface TypeTypeCategoryEnumerationType extends org.apache.xmlbeans.Xml
     static final Enum X_23_25_10_27_24_11_EXPANSION_AND_CONTRACTION_JOINTS = Enum.forString("23-25 10 27 24 11: Expansion and Contraction Joints");
     static final Enum X_23_25_10_27_24_14_WATERSTOPS = Enum.forString("23-25 10 27 24 14: Waterstops");
     static final Enum X_23_25_20_ENVELOPE_ENCLOSURE_PRODUCTS = Enum.forString("23-25 20: Envelope Enclosure Products");
-    static final Enum X_23_25_20_11_INFILL_FAÇADES = Enum.forString("23-25 20 11: Infill Façades");
+    static final Enum X_23_25_20_11_INFILL_FACADES = Enum.forString("23-25 20 11: Infill Facades");
     static final Enum X_23_25_20_11_11_EXTERIOR_WALL_ASSEMBLIES = Enum.forString("23-25 20 11 11: Exterior Wall Assemblies");
-    static final Enum X_23_25_20_14_GLAZED_FAÇADE_AND_ROOF_STRUCTURES = Enum.forString("23-25 20 14: Glazed Façade and Roof Structures");
+    static final Enum X_23_25_20_14_GLAZED_FACADE_AND_ROOF_STRUCTURES = Enum.forString("23-25 20 14: Glazed Facade and Roof Structures");
     static final Enum X_23_25_20_14_11_CURTAIN_WALLS = Enum.forString("23-25 20 14 11: Curtain Walls");
     static final Enum X_23_25_20_14_11_11_CURTAIN_WALL_COMPONENTS = Enum.forString("23-25 20 14 11 11: Curtain Wall Components ");
     static final Enum X_23_25_20_14_11_11_11_CURTAIN_WALL_FRAMES = Enum.forString("23-25 20 14 11 11 11: Curtain Wall Frames");
@@ -2444,7 +2444,7 @@ public interface TypeTypeCategoryEnumerationType extends org.apache.xmlbeans.Xml
     static final Enum X_23_60_10_17_FLOW_METERS = Enum.forString("23-60 10 17: Flow Meters");
     static final Enum X_23_60_10_21_CONCENTRATION_MEASURING_INSTRUMENTS = Enum.forString("23-60 10 21: Concentration Measuring Instruments");
     static final Enum X_23_60_10_21_11_HUMIDITY_CONCENTRATION_MEASURING_INSTRUMENTS = Enum.forString("23-60 10 21 11: Humidity Concentration Measuring Instruments");
-    static final Enum X_23_60_10_21_14_CARBON_DIOXIDE_CO_CONCENTRATION_MEASURING_INSTRUMENTS = Enum.forString("23-60 10 21 14: Carbon Dioxide (CO²) Concentration Measuring Instruments");
+    static final Enum X_23_60_10_21_14_CARBON_DIOXIDE_CO_CONCENTRATION_MEASURING_INSTRUMENTS = Enum.forString("23-60 10 21 14: Carbon Dioxide (CO2) Concentration Measuring Instruments");
     static final Enum X_23_60_10_21_17_OZONE_CONCENTRATION_MEASURING_INSTRUMENTS = Enum.forString("23-60 10 21 17: Ozone Concentration Measuring Instruments");
     static final Enum X_23_60_10_21_21_OTHER_GAS_CONCENTRATION_MEASURING_INSTRUMENTS = Enum.forString("23-60 10 21 21: Other Gas Concentration Measuring Instruments");
     static final Enum X_23_60_10_24_HEAT_MEASURING_INSTRUMENTS = Enum.forString("23-60 10 24: Heat Measuring Instruments");
@@ -3995,9 +3995,9 @@ public interface TypeTypeCategoryEnumerationType extends org.apache.xmlbeans.Xml
     static final int INT_X_23_25_10_27_24_11_EXPANSION_AND_CONTRACTION_JOINTS = Enum.INT_X_23_25_10_27_24_11_EXPANSION_AND_CONTRACTION_JOINTS;
     static final int INT_X_23_25_10_27_24_14_WATERSTOPS = Enum.INT_X_23_25_10_27_24_14_WATERSTOPS;
     static final int INT_X_23_25_20_ENVELOPE_ENCLOSURE_PRODUCTS = Enum.INT_X_23_25_20_ENVELOPE_ENCLOSURE_PRODUCTS;
-    static final int INT_X_23_25_20_11_INFILL_FAÇADES = Enum.INT_X_23_25_20_11_INFILL_FAÇADES;
+    static final int INT_X_23_25_20_11_INFILL_FACADES = Enum.INT_X_23_25_20_11_INFILL_FACADES;
     static final int INT_X_23_25_20_11_11_EXTERIOR_WALL_ASSEMBLIES = Enum.INT_X_23_25_20_11_11_EXTERIOR_WALL_ASSEMBLIES;
-    static final int INT_X_23_25_20_14_GLAZED_FAÇADE_AND_ROOF_STRUCTURES = Enum.INT_X_23_25_20_14_GLAZED_FAÇADE_AND_ROOF_STRUCTURES;
+    static final int INT_X_23_25_20_14_GLAZED_FACADE_AND_ROOF_STRUCTURES = Enum.INT_X_23_25_20_14_GLAZED_FACADE_AND_ROOF_STRUCTURES;
     static final int INT_X_23_25_20_14_11_CURTAIN_WALLS = Enum.INT_X_23_25_20_14_11_CURTAIN_WALLS;
     static final int INT_X_23_25_20_14_11_11_CURTAIN_WALL_COMPONENTS = Enum.INT_X_23_25_20_14_11_11_CURTAIN_WALL_COMPONENTS;
     static final int INT_X_23_25_20_14_11_11_11_CURTAIN_WALL_FRAMES = Enum.INT_X_23_25_20_14_11_11_11_CURTAIN_WALL_FRAMES;
@@ -7289,9 +7289,9 @@ public interface TypeTypeCategoryEnumerationType extends org.apache.xmlbeans.Xml
         static final int INT_X_23_25_10_27_24_11_EXPANSION_AND_CONTRACTION_JOINTS = 709;
         static final int INT_X_23_25_10_27_24_14_WATERSTOPS = 710;
         static final int INT_X_23_25_20_ENVELOPE_ENCLOSURE_PRODUCTS = 711;
-        static final int INT_X_23_25_20_11_INFILL_FAÇADES = 712;
+        static final int INT_X_23_25_20_11_INFILL_FACADES = 712;
         static final int INT_X_23_25_20_11_11_EXTERIOR_WALL_ASSEMBLIES = 713;
-        static final int INT_X_23_25_20_14_GLAZED_FAÇADE_AND_ROOF_STRUCTURES = 714;
+        static final int INT_X_23_25_20_14_GLAZED_FACADE_AND_ROOF_STRUCTURES = 714;
         static final int INT_X_23_25_20_14_11_CURTAIN_WALLS = 715;
         static final int INT_X_23_25_20_14_11_11_CURTAIN_WALL_COMPONENTS = 716;
         static final int INT_X_23_25_20_14_11_11_11_CURTAIN_WALL_FRAMES = 717;
@@ -10557,9 +10557,9 @@ public interface TypeTypeCategoryEnumerationType extends org.apache.xmlbeans.Xml
                 new Enum("23-25 10 27 24 11: Expansion and Contraction Joints", INT_X_23_25_10_27_24_11_EXPANSION_AND_CONTRACTION_JOINTS),
                 new Enum("23-25 10 27 24 14: Waterstops", INT_X_23_25_10_27_24_14_WATERSTOPS),
                 new Enum("23-25 20: Envelope Enclosure Products", INT_X_23_25_20_ENVELOPE_ENCLOSURE_PRODUCTS),
-                new Enum("23-25 20 11: Infill Façades", INT_X_23_25_20_11_INFILL_FAÇADES),
+                new Enum("23-25 20 11: Infill Facades", INT_X_23_25_20_11_INFILL_FACADES),
                 new Enum("23-25 20 11 11: Exterior Wall Assemblies", INT_X_23_25_20_11_11_EXTERIOR_WALL_ASSEMBLIES),
-                new Enum("23-25 20 14: Glazed Façade and Roof Structures", INT_X_23_25_20_14_GLAZED_FAÇADE_AND_ROOF_STRUCTURES),
+                new Enum("23-25 20 14: Glazed Facade and Roof Structures", INT_X_23_25_20_14_GLAZED_FACADE_AND_ROOF_STRUCTURES),
                 new Enum("23-25 20 14 11: Curtain Walls", INT_X_23_25_20_14_11_CURTAIN_WALLS),
                 new Enum("23-25 20 14 11 11: Curtain Wall Components ", INT_X_23_25_20_14_11_11_CURTAIN_WALL_COMPONENTS),
                 new Enum("23-25 20 14 11 11 11: Curtain Wall Frames", INT_X_23_25_20_14_11_11_11_CURTAIN_WALL_FRAMES),
@@ -12269,7 +12269,7 @@ public interface TypeTypeCategoryEnumerationType extends org.apache.xmlbeans.Xml
                 new Enum("23-60 10 17: Flow Meters", INT_X_23_60_10_17_FLOW_METERS),
                 new Enum("23-60 10 21: Concentration Measuring Instruments", INT_X_23_60_10_21_CONCENTRATION_MEASURING_INSTRUMENTS),
                 new Enum("23-60 10 21 11: Humidity Concentration Measuring Instruments", INT_X_23_60_10_21_11_HUMIDITY_CONCENTRATION_MEASURING_INSTRUMENTS),
-                new Enum("23-60 10 21 14: Carbon Dioxide (CO²) Concentration Measuring Instruments", INT_X_23_60_10_21_14_CARBON_DIOXIDE_CO_CONCENTRATION_MEASURING_INSTRUMENTS),
+                new Enum("23-60 10 21 14: Carbon Dioxide (CO2) Concentration Measuring Instruments", INT_X_23_60_10_21_14_CARBON_DIOXIDE_CO_CONCENTRATION_MEASURING_INSTRUMENTS),
                 new Enum("23-60 10 21 17: Ozone Concentration Measuring Instruments", INT_X_23_60_10_21_17_OZONE_CONCENTRATION_MEASURING_INSTRUMENTS),
                 new Enum("23-60 10 21 21: Other Gas Concentration Measuring Instruments", INT_X_23_60_10_21_21_OTHER_GAS_CONCENTRATION_MEASURING_INSTRUMENTS),
                 new Enum("23-60 10 24: Heat Measuring Instruments", INT_X_23_60_10_24_HEAT_MEASURING_INSTRUMENTS),

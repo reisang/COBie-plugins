@@ -21,6 +21,8 @@ import java.io.InputStream;
 
 import javax.xml.parsers.ParserConfigurationException;
 
+
+
 import nl.fountain.xelem.XFactory;
 import nl.fountain.xelem.excel.Workbook;
 import nl.fountain.xelem.lex.ExcelReader;
@@ -40,10 +42,10 @@ import org.bimserver.cobie.utils.spreadsheetml.SpreadsheetToSpaces;
 import org.bimserver.cobie.utils.spreadsheetml.SpreadsheetToSystems;
 import org.bimserver.cobie.utils.spreadsheetml.SpreadsheetToTypes;
 import org.bimserver.cobie.utils.spreadsheetml.SpreadsheetToZones;
+import org.bimserver.emf.IfcModelInterface;
 import org.bimserver.plugins.deserializers.DeserializeException;
 import org.bimserver.plugins.deserializers.EmfDeserializer;
 import org.bimserver.plugins.schema.SchemaDefinition;
-import org.bimserver.plugins.serializers.IfcModelInterface;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.xml.sax.InputSource;

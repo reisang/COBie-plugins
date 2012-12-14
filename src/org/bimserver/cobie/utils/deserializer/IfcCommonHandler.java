@@ -1,7 +1,8 @@
 package org.bimserver.cobie.utils.deserializer;
 
 import org.bimserver.cobie.plugins.COBieIfcModel;
-import org.bimserver.plugins.serializers.OidProvider;
+import org.bimserver.emf.OidProvider;
+
 
 public class IfcCommonHandler
 {

@@ -9,6 +9,7 @@ import org.bimserver.cobie.utils.COBieUtility;
 import org.bimserver.cobie.utils.deserializer.propertysets.PropertyUtility;
 import org.bimserver.cobie.utils.stringwriters.DeserializerStaticStrings;
 import org.bimserver.cobie.utils.stringwriters.IfcUnitToCOBieString;
+import org.bimserver.emf.OidProvider;
 import org.bimserver.models.ifc2x3tc1.Ifc2x3tc1Factory;
 import org.bimserver.models.ifc2x3tc1.IfcElementQuantity;
 import org.bimserver.models.ifc2x3tc1.IfcLengthMeasure;
@@ -26,7 +27,6 @@ import org.bimserver.models.ifc2x3tc1.IfcRelDefinesByProperties;
 import org.bimserver.models.ifc2x3tc1.IfcTypeObject;
 import org.bimserver.models.ifc2x3tc1.IfcUnit;
 import org.bimserver.models.ifc2x3tc1.IfcValue;
-import org.bimserver.plugins.serializers.OidProvider;
 
 
 public class PropertySetHandler

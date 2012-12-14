@@ -44,8 +44,8 @@ import org.bimserver.cobie.cobielite.TypeType;
 import org.bimserver.cobie.cobielite.ZoneType;
 import org.bimserver.cobie.utils.COBieUtility;
 import org.bimserver.cobie.utils.spreadsheetml.COBieSpreadSheet;
+import org.bimserver.emf.IfcModelInterface;
 import org.bimserver.plugins.PluginManager;
-import org.bimserver.plugins.serializers.IfcModelInterface;
 import org.bimserver.plugins.serializers.ProjectInfo;
 import org.bimserver.plugins.serializers.SerializerException;
 import org.bimserver.utils.UTF8PrintWriter;
@@ -73,7 +73,7 @@ public class COBieSerializer extends COBieLiteSerializer {
 	public File getConfigurationFile() {
 		return configurationFile;
 	}
-	protected void reset() {
+	public void reset() {
 		super.reset();
 	}
 	

@@ -4,10 +4,10 @@ import java.util.HashMap;
 
 import org.bimserver.cobie.plugins.COBieIfcModel;
 import org.bimserver.emf.IdEObject;
+import org.bimserver.emf.OidProvider;
 import org.bimserver.models.ifc2x3tc1.Ifc2x3tc1Factory;
 import org.bimserver.models.ifc2x3tc1.IfcGloballyUniqueId;
 import org.bimserver.models.ifc2x3tc1.IfcPropertySet;
-import org.bimserver.plugins.serializers.OidProvider;
 import org.eclipse.emf.ecore.EObject;
 import org.openifc.guidcompressor.GuidCompressor;
 

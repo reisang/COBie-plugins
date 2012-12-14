@@ -21,6 +21,7 @@ import java.util.Calendar;
 import org.bimserver.cobie.cobielite.COBIEType;
 import org.bimserver.cobie.cobielite.ContactType;
 import org.bimserver.cobie.plugins.COBieIfcModel;
+import org.bimserver.emf.OidProvider;
 import org.bimserver.models.ifc2x3tc1.Ifc2x3tc1Factory;
 import org.bimserver.models.ifc2x3tc1.IfcActorRole;
 import org.bimserver.models.ifc2x3tc1.IfcOrganization;
@@ -29,7 +30,6 @@ import org.bimserver.models.ifc2x3tc1.IfcPersonAndOrganization;
 import org.bimserver.models.ifc2x3tc1.IfcPostalAddress;
 import org.bimserver.models.ifc2x3tc1.IfcRoleEnum;
 import org.bimserver.models.ifc2x3tc1.IfcTelecomAddress;
-import org.bimserver.plugins.serializers.OidProvider;
 
 
 public class ContactDeserializer 
